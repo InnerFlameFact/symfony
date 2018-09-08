@@ -1,4 +1,10 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/InnerFlameFact/backup-manager"
+        }
+    ],
     "name": "backup-manager/symfony",
     "description": "A simple database backup manager for Symfony2 with support for S3, Rackspace, Dropbox, FTP, SFTP.",
     "keywords": ["database","backup","Symfony","S3","Rackspace","Dropbox","FTP","SFTP"],
@@ -12,7 +18,7 @@
     ],
     "require": {
         "php": "^5.5 || ^7.0",
-        "backup-manager/backup-manager": "^1.2",
+        "backup-manager/backup-manager": "dev-dev-b2",
         "nyholm/dsn": "^0.1",
         "symfony/config": "^2.7 || ^3.1 || ^4.0",
         "symfony/console": "^2.7 || ^3.1 || ^4.0",
@@ -30,6 +36,7 @@
     },
     "suggest": {
         "league/flysystem-aws-s3-v3": "To use AWS S3, version 3",
+        "mhetreramesh/flysystem--backblaze": "To use Backblaze",
         "srmklive/flysystem-dropbox-v2": "To use Dropbox",
         "league/flysystem-rackspace": "To use Rackspace",
         "league/flysystem-sftp": "To use sftp"
